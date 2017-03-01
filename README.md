@@ -18,7 +18,7 @@ bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic mumu
 
 ```
 
-5) Run perl script producer.pl for collecting data from Cassandra and writing into consumer.
+5) Run perl script <b>producer.pl</b> for collecting data from Cassandra and writing into consumer.
 
 The output in consumer will be:
 
@@ -36,3 +36,5 @@ user3@example.com
 
 Zah End!
 ```
+
+You can also create a perl program for consumer as well. More details: http://search.cpan.org/~sgladkov/
