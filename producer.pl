@@ -25,19 +25,19 @@
 print "\n";
 
 	my $response = $producer->send(
-	  'mumu', 
-	  0,
-	 'first message! Yey!' 
+	  'mumu',  # topic
+	  0, 	   # partition
+	 'first message! Yey!'  # messages
 	);
 
 
         $response = $producer->send(
-            'mumu',          # topic
-            0,                  # partition
-            [                   # messages
+            'mumu',        
+            0,                 
+            [                  
                `date +"%H:%M"`,
                 'another message',
-                $cassandra_data,
+                $cassandra_data, #our data from Casssandra
             ]
         );
 	$response = $producer->send(
